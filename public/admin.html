@@ -1,0 +1,32 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | Donor Approvals</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="admin.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <header class="bg-red-700 text-white p-4">
+    <h1 class="text-xl font-bold text-center">🛡️ Admin Panel - Blood Donor Approvals</h1>
+  </header>
+
+  <main class="p-4 space-y-6">
+    <div class="text-center">
+      <button id="loginBtn" class="bg-white text-red-700 border border-red-700 px-4 py-2 rounded shadow hover:bg-red-100">🔐 Sign in with Google</button>
+    </div>
+
+    <section id="adminArea" class="hidden">
+      <h2 class="text-lg font-semibold mb-4">⏳ Pending Donor Requests</h2>
+      <div id="pendingList" class="grid gap-4 md:grid-cols-2"></div>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 py-4">
+    Admin Dashboard | Kamrul Islam Sohan
+  </footer>
+</body>
+</html>
